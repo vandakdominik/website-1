@@ -1,10 +1,32 @@
-.header-img-div {
+* {
+  font-family: Roboto, Arial;
+}
+
+body,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-div {
   width: 100%;
-  height: 180px;
+  height: 1fr;
   background-color: darkblue;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Dancing Script";
+  font-size: 100px;
+  font-weight: 700;
 }
 
 .header-img {
@@ -35,7 +57,6 @@
 
 .social-media-link {
   height: 50px;
-  width: 50px;
 }
 
 .contact-email {
@@ -53,31 +74,40 @@
   height: 100%;
 }
 
+.button-previous,
+.next-button {
+  position: absolute;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  width: 50px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-previous {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+.next-img-arrow,
 .previous-img-arrow {
   position: absolute;
-  height: 80px;
-  left: 0px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.previous-img-arrow:hover {
+.button-previous:hover,
+.next-button:hover {
   background-color: rgba(128, 128, 128, 0.5);
 }
 
-.previous-img-arrow:active {
-  background-color: rgba(64, 64, 64, 0.5);
-}
-
-.next-img-arrow {
-  position: absolute;
-  height: 80px;
-  right: 0px;
-}
-
-.next-img-arrow:hover {
-  background-color: rgba(128, 128, 128, 0.5);
-}
-
-.next-img-arrow:active {
+.button-previous:active,
+.next-button:active {
   background-color: rgba(64, 64, 64, 0.5);
 }
 
@@ -86,13 +116,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   padding: 16px;
 }
 
 .right-sidebar-link {
+  font-family: "Dancing Script";
+  font-size: 60px;
+  font-weight: 700;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
 }
 
 .footer {
+  background-color: rgb(32, 32, 32);
+  color: rgb(206, 206, 206);
+  width: 100%;
+  height: 1fr;
 }
 
 .footer-link {
