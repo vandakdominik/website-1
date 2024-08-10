@@ -3,30 +3,33 @@
 }
 
 body,
-p {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0;
   margin: 0;
-}
-
-html {
-  height: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .header-div {
   width: 100%;
-  height: 1fr;
-  background-color: darkblue;
+  background-color: lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Dancing Script";
   font-size: 100px;
   font-weight: 700;
+  min-height: 160px;
 }
 
 .header-img {
@@ -41,37 +44,73 @@ body {
   display: flex;
   flex-direction: column;
   background-color: gray;
+  padding: 16px;
+  min-height: 200px;
 }
 
-.img-specific-text {
+.img-description {
   height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 30px 0;
+}
+
+.about-image {
+  margin: 0 0 16px 0;
+}
+
+.img-description-text {
+  font-size: 20px;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 8px 0;
+}
+
+.contact-me-text {
 }
 
 .social-media-div {
   height: 15%;
+  min-height: 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  background-color: lightblue;
 }
 
 .social-media-link {
   height: 50px;
 }
 
-.contact-email {
+.contact-information {
   height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-email {
+  margin: 0 0 8px 0;
+}
+
+.contact-tel {
 }
 
 .middle-img-div {
   position: relative;
   display: flex;
   align-items: center;
+  background-color: rgb(32, 32, 32);
 }
 
 .middle-img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 .button-previous,
@@ -130,10 +169,20 @@ body {
 
 .footer {
   background-color: rgb(32, 32, 32);
-  color: rgb(206, 206, 206);
-  width: 100%;
-  height: 1fr;
+  color: rgb(150, 150, 150);
+  flex: 1fr;
+  flex-grow: 1;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-link {
+}
+
+@media (max-width: 1000px) {
+  .main-div {
+    grid-template-columns: 1fr;
+  }
 }
