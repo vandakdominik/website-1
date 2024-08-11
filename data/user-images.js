@@ -12,8 +12,16 @@ export const userImagesData = {
       'fantasy forrest temple',
       'girl standing with umbrella under a tree',
     ],
-    workProcedure: [],
-    materials: [],
+    workProcedure: [
+      null,
+      'https://www.youtube.com/results?search_query=how+to+draw',
+      'https://www.youtube.com/results?search_query=how+to+draw',
+    ],
+    materials: [
+      null,
+      null,
+      'https://www.google.com/search?q=drawing+materials&oq=drawing+materials&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDgzMjdqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8',
+    ],
     inspirations: [
       'https://wallpapers.com/1920-x-1080-hd',
       'https://www.wallpaperflare.com/1920x1080-px-artwork-fantasy-art-forest-trees-nature-water-hd-art-wallpaper-bjlai',
