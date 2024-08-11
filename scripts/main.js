@@ -19,42 +19,10 @@ const personalContacts = document.querySelector('.js-contact-information');
 const userId = '00000001';
 
 //get user + image specific data
-const userInfo = userInfoData;
-const userImages = userImagesData;
-
-//* mby move this to local storage later
-let imageIndex = 0;
-const imageCount = imgPath.length;
-
-function generateImgHtml() {
-  //right sidebar link creation
-  let rightSidebarHTML = '';
-  if (userImages.workProcedure[imageIndex]) {
-    rightSidebarHTML += `
-    <a class="right-sidebar-link" href="${userImages.workProcedure}">Postup&nbspprace</a>
-    `;
-  }
-  if (userImages.materials[imageIndex]) {
-    rightSidebarHTML += `
-    <a class="right-sidebar-link" href="${userImages.materials}">Materialy</a>
-    `;
-  }
-  if (userImages.inspirations[imageIndex]) {
-    rightSidebarHTML += `
-    <a class="right-sidebar-link" href="${userImages.inspirations}">Inspiracie</a>
-    `;
-  }
-
-  //load image specific data
-  description.innerText = userImages.imgDescription[imageIndex];
-  img.src = userImages.imgPath[imageIndex];
-  rightSidebar.innerHTML = rightSidebarHTML;
-}
-generateImgHtml();
+const userInfo = userInfoData[userId];
+const userImages = userImagesData[userId];
 
 //load user specific data
-//TODO later
-
 let socialMediaHTML = '';
 if (userInfo.socialMedia.facebook) {
   socialMediaHTML += `
@@ -63,6 +31,7 @@ if (userInfo.socialMedia.facebook) {
       class="social-media-link"
       src="icons/facebook-icon-1.png"
       alt="facebook-link"
+      target="_blank"
     />
   </a>
 `;
@@ -74,6 +43,7 @@ if (userInfo.socialMedia.instagram) {
       class="social-media-link"
       src="icons/instagram-icon-1.png"
       alt="instagram-link"
+      target="_blank"
     />
   </a>
 `;
@@ -85,6 +55,7 @@ if (userInfo.socialMedia.x) {
       class="social-media-link"
       src="icons/x-icon-3.png"
       alt="x-link"
+      target="_blank"
     />
   </a>
 `;
@@ -95,15 +66,45 @@ let personalContactsHTML = '';
 if (userInfo.email) {
   personalContactsHTML += `
     <p>Email:</p>
-    <a href="mailto:${userInfo.email}" class="contact-email">${userInfo.email}</a>
+    <a href="mailto:${userInfo.email}" class="contact-email" target="_blank">${userInfo.email}</a>
   `;
 }
 if (userInfo.telNumber) {
   personalContactsHTML += `
     <p>Tel number:</p>
-    <a class="contact-tel" href="tel:${userInfo.telNumber}">${userInfo.telNumber}</a>
+    <a class="contact-tel" href="tel:${userInfo.telNumber}" target="_blank">${userInfo.telNumber}</a>
   `;
 }
 personalContacts.innerHTML = personalContactsHTML;
+
+//* mby move this to local storage later
+let imageIndex = 0;
+const imageCount = userImages.imgPath.length;
+
+function generateImgHtml() {
+  //right sidebar link creation
+  let rightSidebarHTML = '';
+  if (userImages.workProcedure[imageIndex]) {
+    rightSidebarHTML += `
+    <a class="right-sidebar-link" href="${userImages.workProcedure}" >Postup&nbsppráce</a>
+    `;
+  }
+  if (userImages.materials[imageIndex]) {
+    rightSidebarHTML += `
+    <a class="right-sidebar-link" href="${userImages.materials}" >Materiály</a>
+    `;
+  }
+  if (userImages.inspirations[imageIndex]) {
+    rightSidebarHTML += `
+    <a class="right-sidebar-link" href="${userImages.inspirations}" >Inšpirácie</a>
+    `;
+  }
+
+  //load image specific data
+  description.innerText = userImages.imgDescription[imageIndex];
+  img.src = userImages.imgPath[imageIndex];
+  rightSidebar.innerHTML = rightSidebarHTML;
+}
+generateImgHtml();
 
 //TODO make it so when we reach the last image it will overflow

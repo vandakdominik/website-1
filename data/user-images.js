@@ -6,10 +6,18 @@
 */
 export const userImagesData = {
   '00000001': {
-    imgPath: [],
-    imgDescription: [],
+    imgPath: ['images/img1.jpg', 'images/img1.jpg', 'images/img1.jpg'],
+    imgDescription: [
+      'man standing on exotic planet alone looking at the beautiful night sky',
+      'fantasy forrest temple',
+      'girl standing with umbrella under a tree',
+    ],
     workProcedure: [],
     materials: [],
-    inspirations: [],
+    inspirations: [
+      'https://wallpapers.com/1920-x-1080-hd',
+      'https://www.wallpaperflare.com/1920x1080-px-artwork-fantasy-art-forest-trees-nature-water-hd-art-wallpaper-bjlai',
+      'https://www.wallpaperflare.com/1920x1080-px-digital-art-fantasy-art-landscape-long-hair-ryky-trees-wind-anime-death-note-hd-art-wallpaper-bohgh',
+    ],
   },
 };
