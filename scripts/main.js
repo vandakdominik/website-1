@@ -86,17 +86,17 @@ function generateImgHtml() {
   let rightSidebarHTML = '';
   if (userImages.workProcedure[imageIndex]) {
     rightSidebarHTML += `
-    <a class="right-sidebar-link" href="${userImages.workProcedure[imageIndex]} target="_blank"" >Postup&nbsppráce</a>
+    <a class="right-sidebar-link" href="${userImages.workProcedure[imageIndex]}" target="_blank">Postup&nbsppráce</a>
     `;
   }
   if (userImages.materials[imageIndex]) {
     rightSidebarHTML += `
-    <a class="right-sidebar-link" href="${userImages.materials[imageIndex]} target="_blank"" >Materiály</a>
+    <a class="right-sidebar-link" href="${userImages.materials[imageIndex]}" target="_blank">Materiály</a>
     `;
   }
   if (userImages.inspirations[imageIndex]) {
     rightSidebarHTML += `
-    <a class="right-sidebar-link" href="${userImages.inspirations[imageIndex]} target="_blank"" >Inšpirácie</a>
+    <a class="right-sidebar-link" href="${userImages.inspirations[imageIndex]}" target="_blank">Inšpirácie</a>
     `;
   }
 
