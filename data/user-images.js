@@ -6,9 +6,9 @@
 */
 export const userImagesData = {
   '00000001': {
-    imgPath: ['images/img1.jpg', 'images/img1.jpg', 'images/img1.jpg'],
+    imgPath: ['images/img1.jpg', 'images/img2.jpg', 'images/img3.jpg'],
     imgDescription: [
-      'man standing on exotic planet alone looking at the beautiful night sky',
+      'girl standing on exotic planet alone looking at the beautiful night sky',
       'fantasy forrest temple',
       'girl standing with umbrella under a tree',
     ],

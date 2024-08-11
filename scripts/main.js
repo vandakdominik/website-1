@@ -2,7 +2,7 @@ import { userInfoData } from '../data/user-info.js';
 import { userImagesData } from '../data/user-images.js';
 
 //get buttons
-const prevButton = document.querySelector('js-button-previous');
+const prevButton = document.querySelector('.js-button-previous');
 const nextButton = document.querySelector('.js-next-button');
 
 //elements image specific
@@ -106,5 +106,20 @@ function generateImgHtml() {
   rightSidebar.innerHTML = rightSidebarHTML;
 }
 generateImgHtml();
+
+//calculates real index with overflow, changes negative indices to there positive counterpart
+//num = index to move, accepts both positive and negative indices
+function calculateCurrentIndex(num) {
+  imageIndex = (imageIndex + (num % imageCount) + imageCount) % imageCount;
+}
+
+prevButton.addEventListener('click', () => {
+  calculateCurrentIndex(-1);
+  generateImgHtml();
+});
+nextButton.addEventListener('click', () => {
+  calculateCurrentIndex(1);
+  generateImgHtml();
+});
 
 //TODO make it so when we reach the last image it will overflow
