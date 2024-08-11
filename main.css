@@ -22,7 +22,6 @@ body {
 
 .header-div {
   width: 100%;
-  background-color: lightgray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,9 +42,10 @@ body {
 .left-sidebar {
   display: flex;
   flex-direction: column;
-  background-color: gray;
   padding: 16px;
   min-height: 200px;
+  margin: 8px;
+  border-radius: 8px;
 }
 
 .img-description {
@@ -105,12 +105,15 @@ body {
   display: flex;
   align-items: center;
   background-color: rgb(32, 32, 32);
+  margin: 8px 0 8px 0;
+  border-radius: 8px;
 }
 
 .middle-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 8px;
 }
 
 .button-previous,
@@ -142,21 +145,22 @@ body {
 
 .button-previous:hover,
 .next-button:hover {
-  background-color: rgba(128, 128, 128, 0.5);
+  background-color: rgba(90, 90, 90, 0.5);
 }
 
 .button-previous:active,
 .next-button:active {
-  background-color: rgba(64, 64, 64, 0.5);
+  background-color: rgba(64, 64, 64, 0.75);
 }
 
 .right-sidebar {
-  background-color: gray;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 16px;
+  margin: 8px;
+  border-radius: 8px;
 }
 
 .right-sidebar-link {
@@ -181,8 +185,16 @@ body {
 .footer-link {
 }
 
-@media (max-width: 1000px) {
+.shadow {
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1280px) {
   .main-div {
     grid-template-columns: 1fr;
+  }
+
+  .middle-img-div {
+    margin: 0 8px;
   }
 }

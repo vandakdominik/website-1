@@ -16,19 +16,23 @@
   </head>
   <body>
     <div class="header-div">MojeKamienky.sk</div>
+
     <div class="main-div">
-      <div class="left-sidebar">
+      <div class="left-sidebar shadow">
         <div class="img-description">
           <h2 class="about-image">about image</h2>
-          <p class="img-description-text">
-            my favorite image aaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaaa aaaaaaaa
+          <p class="img-description-text js-description">
+            my favorite image aaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaaa aaaaaaaa my
+            favorite image aaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaaa aaaaaaaa my
+            favorite image aaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaaa aaaaaaaa my
+            favorite image aaaaa aaaaaaaaaaa aaaaaaaaaa aaaaaaaa aaaaaaaa
           </p>
         </div>
         <div class="contact-me">
           <h3 class="contact-me-text">Contact me:</h3>
         </div>
-        <div class="social-media-div">
-          <a href="https://www.facebook.com/">
+        <div class="social-media-div js-social-media-div">
+          <a class="js-facebook-link" href="https://www.facebook.com/">
             <img
               class="social-media-link"
               src="/icons/facebook-icon-1.png"
@@ -50,7 +54,7 @@
             />
           </a>
         </div>
-        <div class="contact-information">
+        <div class="contact-information js-contact-information">
           <p>Email:</p>
           <a href="mailto:someone@example.com" class="contact-email"
             >myemail@idk.com
@@ -61,8 +65,13 @@
           >
         </div>
       </div>
-      <div class="middle-img-div">
-        <img class="middle-img" src="images/img1.jpg" alt="current-image" />
+
+      <div class="middle-img-div shadow">
+        <img
+          class="middle-img js-middle-img"
+          src="images/img1.jpg"
+          alt="current-image"
+        />
         <button class="button-previous">
           <img
             class="previous-img-arrow"
@@ -78,12 +87,15 @@
           />
         </button>
       </div>
-      <div class="right-sidebar">
+
+      <div class="right-sidebar shadow js-right-sidebar">
         <a class="right-sidebar-link" href="">Postup&nbspprace</a>
-        <a class="right-sidebar-link" href="">Material</a>
+        <a class="right-sidebar-link" href="">Materialy</a>
         <a class="right-sidebar-link" href="">Inspiracie</a>
       </div>
     </div>
     <div class="footer">Created by Domink Vandak on 2024</div>
+
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
