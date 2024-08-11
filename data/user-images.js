@@ -1,6 +1,6 @@
 /*
   export const userImages = {
-  id: {imgPath: [str, ...], imgDescription: [str, ...], workProcedure: [strUrl/null, ...], materials: [strUrl/null, ...], inspirations: [strUrl/null, ...]},
+  id: {imgPath: [str, ...], imgDescription: [str, ...], workProcedure: [strUrl/'', ...], materials: [strUrl/'', ...], inspirations: [strUrl/'', ...]},
   id: ...
   }
 */
@@ -13,13 +13,13 @@ export const userImagesData = {
       'girl standing with umbrella under a tree',
     ],
     workProcedure: [
-      null,
+      '',
       'https://www.youtube.com/results?search_query=how+to+draw',
       'https://www.youtube.com/results?search_query=how+to+draw',
     ],
     materials: [
-      null,
-      null,
+      '',
+      '',
       'https://www.google.com/search?q=drawing+materials&oq=drawing+materials&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDgzMjdqMGoxqAIAsAIA&sourceid=chrome&ie=UTF-8',
     ],
     inspirations: [

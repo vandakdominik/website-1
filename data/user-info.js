@@ -2,22 +2,22 @@
   export const userInfo = {
   id(hex*8): { 
   userName: str,
-  socialMedia: {facebook: strUrl/none, instagram: strUrl/none, x: strUrl/none},
-  email: str/none,
-  telNumber: str/none
+  socialMedia: {facebook: strUrl/'', instagram: strUrl/'', x: strUrl/''},
+  email: str/'',
+  telNumber: str/''
   },
   id: ...
   }
 */
 export const userInfoData = {
   '00000001': {
-    userName: 'Nikus',
+    userName: 'anonymous',
     socialMedia: {
       facebook: 'https://www.facebook.com/',
       instagram: 'https://www.instagram.com/',
-      x: 'https://x.com/',
+      x: '',
     },
-    email: 'someone@example.com',
-    telNumber: '+000 000 000 000 000 000',
+    email: 'janomisovec@gmail.com',
+    telNumber: '',
   },
 };
