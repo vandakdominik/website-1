@@ -9,7 +9,7 @@
   id: ...
   }
 */
-export const userInfo = {
+export const userInfoData = {
   '00000001': {
     userName: 'Nikus',
     socialMedia: {
@@ -18,6 +18,6 @@ export const userInfo = {
       x: 'https://x.com/',
     },
     email: 'someone@example.com',
-    telNumber: null,
+    telNumber: '+000 000 000 000 000 000',
   },
 };

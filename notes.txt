@@ -5,3 +5,7 @@ https://www.wallpaperflare.com/1920x1080-px-artwork-fantasy-art-forest-trees-nat
 
 paint icon for website title
 https://www.iconfinder.com/icons/1055118/art_painting_palette_icon
+
+mby add username on the page later when it becomes multi user (probably wont)
+
+mby add default image if there is no images in the user profile same with other image specific values
